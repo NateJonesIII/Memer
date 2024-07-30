@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.classList.toggle("light-mode", currentTheme === "light");
 
     // Change the button text based on the current theme
-    themeToggle.textContent = currentTheme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode";
+    themeToggle.textContent = currentTheme === "dark" ? "☀" : "🌑";
 
     // Event listener for the theme toggle button
     themeToggle.addEventListener("click", function() {
