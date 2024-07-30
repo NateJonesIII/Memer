@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const updatedTheme = document.body.classList.contains("dark-mode") ? "dark" : "light";
 
         // Change the button text based on the updated theme
-        themeToggle.textContent = updatedTheme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode";
+        themeToggle.textContent = updatedTheme === "dark" ? "☀" : "🌑";
 
         // Save the user's preference in local storage
         localStorage.setItem("theme", updatedTheme);

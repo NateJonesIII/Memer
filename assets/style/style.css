@@ -1,4 +1,4 @@
-<style>
+
     body {
         font-family: 'Raleway', sans-serif;
         transition: background-color 0.3s, color 0.3s;
@@ -15,7 +15,7 @@
     }
 
     .text-dark-mode {
-        color: #f7fafc;
+        color: #161f25;
     }
 
     .text-light-mode {
@@ -48,6 +48,7 @@
         color: #3e5b9f;
     }
 
+
     .text-center.light-mode p,
     .text-center.dark-mode p {
         color: inherit;
@@ -61,7 +62,7 @@
         background-color: #2f855a;
     }
 
-    /* Add these new styles */
+    /* **Joke styles** */
     #joke1,
     #joke2 {
         transition: color 0.3s;
@@ -76,4 +77,29 @@
     body.dark-mode #joke2 {
         color: #192d3b;
     }
-</style>
+
+
+
+/* **Modal styles** */
+
+/* Light Mode */
+.modal {
+    /* background-color: #ffffff; /* White background */ 
+    color: #000000; /* Black text */
+  }
+  
+  .modal-content {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+  }
+  
+  /* Dark Mode */
+  body.dark-mode .modal .fil .cat{
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  }
+  
+  body.dark-mode .modal-content {
+    background-color: #1f2937; /* Dark background */
+    color: #e5e7eb; /* Light text */
+  }
+  
