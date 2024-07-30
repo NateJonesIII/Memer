@@ -103,3 +103,20 @@
     color: #e5e7eb; /* Light text */
   }
   
+
+/* **Search Styles** */
+#searchResults img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  
+  #searchButton {
+    cursor: pointer;
+  }
+  
+  #searchResults {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

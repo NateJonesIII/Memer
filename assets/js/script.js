@@ -157,3 +157,47 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem("theme", updatedTheme);
     });
 });
+
+
+document.getElementById("searchButton").addEventListener("click", function(event) {
+    event.preventDefault();
+    const query = document.getElementById("memeSearch").value.trim();
+    
+    if (query) {
+        searchMemes(query);
+    }
+});
+
+async function searchMemes(query) {
+    try {
+        let response = await fetch(`https://meme-api.com/gimme/${query}`);
+        let results = await response.json();
+        if (results.nsfw) {
+            document.getElementById("searchResults").innerHTML = "NSFW content is not allowed.";
+        } else {
+            displaySearchResults([results]); // Wrap result in an array
+        }
+    } catch (error) {
+        console.error("Error fetching memes:", error);
+        document.getElementById("searchResults").innerHTML = "An error occurred while fetching memes.";
+    }
+}
+
+function displaySearchResults(memes) {
+    const searchResultsContainer = document.getElementById("searchResults");
+    searchResultsContainer.innerHTML = ""; // Clear previous results
+
+    memes.forEach(meme => {
+        if (meme && meme.url) {
+            const memeElement = document.createElement("div");
+            memeElement.className = "relative";
+            memeElement.innerHTML = `
+                <img src="${meme.url}" alt="Meme" class="w-full h-32 object-cover rounded-lg cursor-pointer" />
+            `;
+            memeElement.addEventListener("click", () => {
+                showModal(meme.url);
+            });
+            searchResultsContainer.appendChild(memeElement);
+        }
+    });
+}
