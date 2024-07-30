@@ -1,6 +1,6 @@
 # Laugh it Up!
 
-Welcome to the Joke Generator project! This web application allows users to generate jokes and memes, filter them based on various criteria, and switch between light and dark modes. It's built using modern web technologies and provides a clean and engaging user experience.
+Welcome to the JLaugh it Up! This web application allows users to generate jokes and memes, filter them based on various criteria, and switch between light and dark modes. It's built using modern web technologies and provides a clean and engaging user experience.
 
 ## Features
 
