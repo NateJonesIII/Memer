@@ -27,7 +27,7 @@ Welcome to the JLaugh it Up! This web application allows users to generate jokes
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/joke-generator.git
+   git clone https://github.com/natejonesiii/memer.git
    ```
 
 2. **Navigate to the project directory:**
