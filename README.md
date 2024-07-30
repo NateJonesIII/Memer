@@ -89,7 +89,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or contributions, please contact:
 
 - **Email**: nate@devnjones.me
-- **GitHub**: [yourusername](https://github.com/natejonesiii)
 
 ## Acknowledgments
 
